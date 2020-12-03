@@ -1,17 +1,23 @@
 <!DOCTYPE html>
 <html>
+<style>
+    body{background-color: peachpuff;}
+    h2{color: lightcoral;}
+</style>
 <head>
     <h2>Calcule su letra del DNI</h2>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
+    <title>Letra dni</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <script src='dni.js'></script>
 </head>
 <body>
+    <form name="formulario">
     <label for="dani">Introduzca su numero de DNI sin letra</label>
-    <input name="letra" id="letra" type="string"> 
+    <input name="dni" type="text"> 
     <input type="button" value="calcular" onclick="averigua()">
+    </form>
 </body>
 </html>
