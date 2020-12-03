@@ -21,12 +21,16 @@ function informarMayoriaEdad() {
         //error entrada
     //si es nº  
         //comparar con limite de edad 
+        let elemento_div= document.getElementById("solución");
         if (edad >=MAYORIA_DE_EDAD)
         { 
-            console.log("Es Mayor de edad"); 
+            console.log("Es Mayor de edad");
+            
+            elemento_div.innerHTML="es mayor de edad"
         }else
         {
-            console.log("Es Menor de edad")
+            console.log("Es Menor de edad");
+            elemento_div.innerHTML="es menor de edad"
         }
         //si es mayor indicarlo y si es menor informar menor
     }
