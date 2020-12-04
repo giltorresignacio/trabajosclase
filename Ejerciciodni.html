@@ -13,11 +13,21 @@
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <script src='dni.js'></script>
 </head>
-<body>
-    <form name="formulario">
-    <label for="dni">Introduzca su numero de DNI sin letra</label>
-    <input name="dni" type="text"> 
-    <input type="button" value="calcular" onclick="averigua()">
-    </form>
+<body id="cuerpo">
+    <label for="dni">Introduzca su numero de DNI</label>
+    <input name="dni" type="number" id="dni"> 
+    <input type="button" value="CALCULAR" onclick="calcularLetraDni()">
+    <br>
+    <input type="radio" id="sin" name="prefijo" value="0">
+    <label for="sin">Sin letra</label>
+    <br>
+    <input type="radio" id="X" name="prefijo" value="0">
+    <label for="X">X</label>
+    <br>
+    <input type="radio" id="Y" name="prefijo" value="1">
+    <label for="Y">Y</label>
+    <br>
+    <input type="radio" id="Z" name="prefijo" value="2">
+    <label for ="Z">Z</label>
 </body>
 </html>
