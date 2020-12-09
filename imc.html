@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html>
+    <style>
+        h1{font-family: fantasy; font-style: oblique;}
+        body{font-style: italic; background-color: azure;}
+    </style>
 <head>
-    <h1>IMC CORPORAL</h1>
+    <h1>AVERIGUE SU IMC</h1>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Page Title</title>
@@ -14,7 +18,8 @@
     <label for= "peso"> ingrese peso (kg)</label> 
     <input type="button" value="calcular" onclick="pesoPersona()"><br>
     <input name="altura" id="altura" >
-    <label for= "altura"> Ingrese altura (m) </label> 
-
+    <label for= "altura"> Ingrese altura (m) </label>
+    <p>Su imc es <span id="imcf"></span></p>
+    <p>Resumen: <span id="resumen"></span></p>
 </body>
 </html>

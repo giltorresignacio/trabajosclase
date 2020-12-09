@@ -9,15 +9,27 @@
 function pesoPersona()
 {
     let peso= document.getElementById("peso").value;
-    console.log("el peso es" + peso)
+    console.log("el peso es" +" " + peso)
     let altura=document.getElementById("altura").value;
-    console.log("la altura es" + altura)
-    let imc= (peso/Math.pow(altura, 2));
-    console.log("el imc es" + imc)
-        
+    console.log("la altura es" + " " + altura)
+    var imc= Math.round(peso/Math.pow(altura, 2)*100)/100;
+    console.log("el imc es" + " " + imc);
+    imcf.innerHTML = imc
     
-}
-function resumenFinal(imc){
     if(imc<16)
-        console.log("estas en los huesos")
+    //console.log("estas desnutrido")
+    resumen.innerHTML = "estas desnutrido"
+    else if(imc>=16 && imc<18) 
+    //console.log("estas delgado")
+    resumen.innerHTML = "estas delgado"
+    else if(imc>=18 && imc<25)
+    //console.log("su imc es ideal")
+    resumen.innerHTML = "Su imc es ideal"
+    else if(imc>=25 && imc<31)
+    //console.log("su imc es sobrepeso")
+    resumen.innerHTML= "Tienes sobrepeso"
+    else if(imc>=31)
+    //console.log("su imc es obeso")
+    resumen.innerHTML= "Estas obeso"
+    
 }
