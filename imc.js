@@ -16,20 +16,15 @@ function pesoPersona()
     console.log("el imc es" + " " + imc);
     imcf.innerHTML = imc
     
-    if(imc<16)
-    //console.log("estas desnutrido")
-    resumen.innerHTML = "estas desnutrido"
-    else if(imc>=16 && imc<18) 
-    //console.log("estas delgado")
-    resumen.innerHTML = "estas delgado"
-    else if(imc>=18 && imc<25)
-    //console.log("su imc es ideal")
-    resumen.innerHTML = "Su imc es ideal"
-    else if(imc>=25 && imc<31)
-    //console.log("su imc es sobrepeso")
-    resumen.innerHTML= "Tienes sobrepeso"
-    else if(imc>=31)
-    //console.log("su imc es obeso")
-    resumen.innerHTML= "Estas obeso"
+    if(imc<16){
+    resumen.innerHTML = '<h2>Estas desnutrido</h2> <img src="trabajosclase/imagenes/desnutrido.jpg" width=300px></img>'}
+    else if(imc>=16 && imc<18){ 
+    resumen.innerHTML = '<h2>Estas delgado</h2> <img src="trabajosclase/imagenes/deslago.jpg"width=300px></img>'}
+    else if(imc>=18 && imc<25){
+    resumen.innerHTML = '<h2>Su imc es ideal </h2> <img src="trabajosclase/imagenes/ideal.webp" width=300px> </img>'}
+    else if(imc>=25 && imc<31){
+    resumen.innerHTML= '<h2> Tienes sobrepeso </h2> <img src="trabajosclase/imagenes/gordo.jpg" width=300px> </img>'}
+    else if(imc>=31){
+    resumen.innerHTML= '<h2>Estas obeso </h2> <img src="trabajosclase/imagenes/obeso.jpg" width=300px> </img>'}
     
 }
