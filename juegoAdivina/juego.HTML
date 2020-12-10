@@ -1,0 +1,39 @@
+  <!DOCTYPE html>
+<html>
+<head>
+    <!--
+        HACER UNA APP QUE HAGA LO SIGUIENTE
+
+        1) LA PAGINA TIENE QUE PENSAR UN NUMERO DEL 1 AL 100 
+        Y DEBE DARLE 5 OPORTUNIDADES MAXIMO AL USUARIO
+        PARA ADIVINARLO 
+
+        DEBEMOS MOSTRAR UN CONTADOR DE LAS VIDAS QUE LE QUEDEN 
+        AL USUARIO EN TODO MOMENTO
+
+        DEBEMOS INFORMARLE CADA VEZ QUE PRUEBE SI 
+        EL NUMERO INTRODUCIDO ES MENOR O MAYOR AL INTRODUCIDO
+
+        SI LO ACIERTA, LE FELICITAMOS CON UN GIF ANIMADO
+        SI FALLA = Y ADEMAS LE INDICAMOS EL NUMERO BUSCADO
+
+
+    -->
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Averigua el número</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src="juego.js"></script>
+</head>
+<body>
+    <div id="vidas"></div>
+    <input type="number" id="numero" >
+    <label for= "numero"> Ingrese el número entre el 1 y el 100</label> 
+    <input type="button" value="resolver" onclick="comprobarIntento()">
+    <a href="javascript:location.reload()">volver a jugar</a>
+    <div id="perdedor"></div>
+    <p><span id="intento"></span></p>
+
+</body>
+</html>
