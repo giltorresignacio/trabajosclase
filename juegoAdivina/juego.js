@@ -1,8 +1,12 @@
 this.onload= carga;
 const NUM_INTENTOS=5;
 let numeroEntero 
-let num_intentos//SIN PARENTESIS
+let num_intentos//SIN PARENTESIS programa el listtener vs CON parentesis llama en ese momento
         function carga() {
+            let value = localStorage.getItem("jugador")
+            let container=document.getElementById("player")
+            container.value=value;
+            container.innerHTML=value;
             let numero_vidas = document.getElementById("vidas");
          numero_vidas.innerHTML= 5;
             let min= 1;
