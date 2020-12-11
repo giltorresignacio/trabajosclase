@@ -1,0 +1,59 @@
+<mxfile host="app.diagrams.net" modified="2020-12-11T10:53:09.164Z" agent="5.0 (Windows)" etag="ai2hzPj_Gd6jIFIKb7se" version="14.0.1" type="github">
+  <diagram id="kkpDX_t8CmxKXIpRLcre" name="Page-1">
+    <mxGraphModel dx="1422" dy="791" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="eUVje2nEoM6y2xXDFqfd-1" value="La app del COVID-19" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="150" y="480" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="eUVje2nEoM6y2xXDFqfd-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;" edge="1" parent="1" source="eUVje2nEoM6y2xXDFqfd-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="520" y="510" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eUVje2nEoM6y2xXDFqfd-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="eUVje2nEoM6y2xXDFqfd-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="510" y="610" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eUVje2nEoM6y2xXDFqfd-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="eUVje2nEoM6y2xXDFqfd-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="560" y="760" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="410" y="760" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eUVje2nEoM6y2xXDFqfd-2" value="Funcionalidades principales" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="450" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="eUVje2nEoM6y2xXDFqfd-3" value="" style="endArrow=classic;html=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="230" y="519.5" as="sourcePoint" />
+            <mxPoint x="300" y="490" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eUVje2nEoM6y2xXDFqfd-4" value="" style="endArrow=classic;html=1;" edge="1" parent="1" target="eUVje2nEoM6y2xXDFqfd-5">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="440" y="480" as="sourcePoint" />
+            <mxPoint x="500" y="440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eUVje2nEoM6y2xXDFqfd-5" value="Informar de los contagios semanales" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="500" y="350" width="120" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="eUVje2nEoM6y2xXDFqfd-8" value="Informar de contagios por zona medica" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="480" width="140" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="eUVje2nEoM6y2xXDFqfd-10" value="Noticias relevantes sobre la vacuna" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="460" y="610" width="140" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="eUVje2nEoM6y2xXDFqfd-13" value="Zonas donde realizan la prueba de antígenos" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="560" y="730" width="170" height="110" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
