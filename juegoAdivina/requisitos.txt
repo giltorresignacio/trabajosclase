@@ -1,0 +1,17 @@
+RF (RQUISITOS FUNCIONALES)
+MOSTRAR NOMBRE
+GUARDAR NOMBRE
+MOSTRAR NOMBRE
+MODIFICAR
+LLEVAR LOS NUMEROS Q VAN SALIENDO
+    DECLARAR LA ARRAY(LISTA)
+        let numeros_jugados= [];
+    GUARDAR EL NUMERO JUGADO 
+        numeros_jugados.push(numero_jugado)
+    MOSTRAR EL ARRAY DE NUMEROS 
+        for 
+    VACIARLO
+        numeros_jugados=[]//null
+    (opcional)ORDENAR 
+        numeros_jugados.sort()
+    

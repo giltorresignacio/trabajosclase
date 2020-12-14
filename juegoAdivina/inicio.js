@@ -5,5 +5,9 @@ function nombreJugador (){
     let jugador= document.getElementById("nombre").value;
     //console.log('mi nombre es' + jugador);
     localStorage.setItem("jugador", jugador);
-    location.href="juego.html";
+    if(jugador==""){
+        window.alert("Introduzca nombre por favor");
+        return
+        }
+        location.href="juego.html";
     }
