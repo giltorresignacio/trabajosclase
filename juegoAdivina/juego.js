@@ -51,6 +51,10 @@ function comprobarIntento() {
 
 
     }
+    nombre_jugador=localStorage.getItem("jugador")
+    party= new Partida(num_intentos,nombre_jugador)
+    console.log(party.mostrarPartida)
+    
   }
 function primeraPagina() {
     location.href = "inicioJuego.html";
@@ -59,6 +63,26 @@ function jugarDeNuevo () {
     location.href = "juego.html";
     
 }
+
+class Partida{
+        costructor(intentos,quienjuega){
+            this.intentos=intentos;
+            this.quienjuega=quienjuega;
+        }
+        
+    get mostrarPartida() {
+        console.log("el jugador" + this.quienjuega + "lo ha intentado en" + this.intentos);
+        }
+    
+} 
+//TODO
+//definir una CLASE partida
+//que contenga el nombre de usuario
+//y el nº de intentos que ha obtenido al jugar 
+//una vez definida la clase, debeis construir
+//un objeto de partida y llamar a una función
+//mostratPartida -dentro de la clase - que nos imprima la indormacion de la partida
+//quien ha jugado y cuantos intentos ha empleado 
 
 
 
