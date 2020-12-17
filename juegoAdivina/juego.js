@@ -30,7 +30,13 @@ function comprobarIntento() {
     console.log("el numero del jugador es" + jugador)
     if (jugador == numeroEntero) {
         intento.innerHTML = '<h2>HAS GANADO!!!</h2> <img src="https://media1.tenor.com/images/39afcd79d4c010f595e59a670028984b/tenor.gif?itemid=15092417" width=600px></img>';
-
+        
+        let nombre_jugador=localStorage.getItem("jugador");
+        //console.log(nombre_jugador);
+        let party= new Partida(num_intentos,nombre_jugador);
+        //console.log(party);
+        party.mostrarPartida();
+        guardarLS(party)
     }
     else if (jugador < numeroEntero) {
         intento.innerHTML = '<h3>El número tiene que ser MAYOR</h3>';
@@ -49,13 +55,15 @@ function comprobarIntento() {
         intento.innerHTML = '<img src="https://media.tenor.com/images/4b3856159b505202ad0a38b512b50166/tenor.gif" width=600px ></img>'
         console.log("SACABAO")
 
-
+        let nombre_jugador=localStorage.getItem("jugador");
+        //console.log(nombre_jugador);
+        var party= new Partida(num_intentos,nombre_jugador);
+        //console.log(party);
+        party.mostrarPartida();
+        guardarLS(party);
     }
-    nombre_jugador=localStorage.getItem("jugador")
-    party= new Partida(num_intentos,nombre_jugador)
-    console.log(party.mostrarPartida)
     
-  }
+}
 function primeraPagina() {
     location.href = "inicioJuego.html";
 }
@@ -65,24 +73,55 @@ function jugarDeNuevo () {
 }
 
 class Partida{
-        costructor(intentos,quienjuega){
+        constructor(intentos,quienjuega){
             this.intentos=intentos;
             this.quienjuega=quienjuega;
         }
         
-    get mostrarPartida() {
-        console.log("el jugador" + this.quienjuega + "lo ha intentado en" + this.intentos);
-        }
+    mostrarPartida() {
+        final.innerHTML="Jugador " + this.quienjuega + " lo has intentado en " + this.intentos + " veces.¡Gracias por jugar!";      
+        console.log("el jugador " + this.quienjuega + " lo ha intentado en " + this.intentos);
+        } 
+    //guardarPartida();
+        
+        
     
-} 
-//TODO
-//definir una CLASE partida
-//que contenga el nombre de usuario
-//y el nº de intentos que ha obtenido al jugar 
-//una vez definida la clase, debeis construir
-//un objeto de partida y llamar a una función
-//mostratPartida -dentro de la clase - que nos imprima la indormacion de la partida
-//quien ha jugado y cuantos intentos ha empleado 
+    
+}
+function guardarLS(party){
+    console.log("ha llegado", party);
+    console.log(localStorage.getItem("partidas"));
+    if(localStorage.getItem("partidas")){
+              //si tiene cosas+
+    let arrayResultados=[];
+    arrayResultados=JSON.parse(localStorage.getItem("partidas"));
+    arrayResultados.push(party);
+    console.log(arrayResultados, "entrado por el if");
+    let cadena=JSON.stringify(arrayResultados);
+    localStorage.setItem("partidas",cadena);
+    }
+        
+    else{
+    let arrayResultados= [];
+    arrayResultados.push(party);
+    console.log(arrayResultados, "entrado por el else");
+    console.log("ha llegado", arrayResultados);
+    let cadena=JSON.stringify(arrayResultados);
+    localStorage.setItem("partidas",cadena);
+        //no tiene
+    }
+    
+
+
+    
+
+
+}
+//guardar la class como si fuera una array
+//la array convertirla a JSON 
+//guardar la JSON al localStorage
+//y la pagina 3 hacer tabla y rellenarla con el localStorage
+
 
 
 
