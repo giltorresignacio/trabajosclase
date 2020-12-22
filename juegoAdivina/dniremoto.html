@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <script>
 
-        const URL_LETRA_DNI = "http://10.1.2.10:8080/js20765/ObtenerInfoDni?dni=";
+        const URL_LETRA_DNI = "https://my-json-server.typicode.com/giltorresignacio/DNI/infordni?dni=";
         //TODO VALIDAR LA ENTRADA
         var xhr = new XMLHttpRequest();
         let letra_rx;
@@ -105,7 +105,7 @@
         <label>Introduce tu DNI</label><br />
         <input type="number" id="txtDNI" /><br />
         <input onclick="calcular()" type="button" id="btnResultado" value="CALCULAR LETRA" /><br />
-        <label>DATOS</label><br />
+        <label>Letra</label><br />
         <input type="text" id="txtDatos" /><br><br>
         <p id=nombre></p>
         <p id=apellidos></p>
