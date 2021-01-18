@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>EJEMPLO API GATOS</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    
+    <script>
+        const URL_GATITOS = "https://placekitten.com/"
+        
+        /**
+         * añadiendo a la url /https://placekitten.com/ el ancho y el alto.
+         * 
+         * Así una URI /https://placekitten.com/200/300 nos da una imagen un de 200 x 300
+         * 
+         * ¿Cómo procedo?
+         * 
+         * 1)Hago un HTML que permita al usuario introducir ancho y alto
+         * 2) Programo un botón 
+         * 3) Cuando el botón es tocado se llama a la función que
+         *      3.1 Obtiene el ancho y alto introducido
+         *      3.2 Genera la nueva URI según me dice el API de gatos
+         *      3.3 Asignamos al src de un elemento imagen la nueva URL obtenidagit
+         * */
+
+        function buscarFotoGato()
+        {
+            let ancho = document.getElementById("ancho").value;
+            console.log ("ancho introducido = " + ancho);
+            let alto = document.getElementById("alto").value;
+            console.log ("alto introducido = " + alto);
+            let url_imagen = URL_GATITOS+ancho+"/"+alto;
+            console.log ("URL imagen nueva = " + url_imagen);
+            let imagen = document.getElementById("fotogatito");
+            imagen.src = url_imagen;
+        }
+
+    </script>
+</head>
+<body>
+    <label for="pixancho">ANCHO</label>
+    <input name="pixancho" type="number" id="ancho">
+    <label for="pixalto">ALTO</label>
+    <input  name="pixalto" type="number" id="alto">
+    <button onclick="buscarFotoGato()">BUSCAR FOTO</button><br>
+    <img id="fotogatito">
+</body>
+</html>
