@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        h1{font-family: fantasy; font-style: oblique;}
+        body{font-style: italic; background-color: azure;}
+    </style>
+<head>
+    <h1>AVERIGUE SU IMC</h1>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Ejercicio IMC</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='imc.js'></script>
+</head>
+<body>
+    <input name="peso" id="peso" >
+    <label for= "peso"> ingrese peso (kg)</label> 
+    <input type="button" value="calcular" onclick="pesoPersona()"><br>
+    <input name="altura" id="altura" >
+    <label for= "altura"> Ingrese altura (m) </label>
+    <p>Su imc es <span id="imcf"></span></p>
+    <p>Resumen: <span id="resumen"></span></p>
+</body>
+</html>
